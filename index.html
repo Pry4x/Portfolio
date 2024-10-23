@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+    <title>Portfolio Website</title>
+</head>
+
+<body>
+    <header>
+        <a href="#" class="logo">Pry4x</a>
+
+        <nav>
+            <a href="#" class="active"> Home</a>
+            <a href="services.html">Services</a>
+            <a href="skills.html">Skills</a>
+            <a href="education.html">Education</a>
+            <a href="experience.html">Experience</a>
+            <a href="contact.html" class="btn">Contact</a> <!-- Link to contact page -->
+        </nav>
+    </header>
+
+    <section class="home">
+        <div class="home-img">
+            <img src="main.jpg" alt="">
+        </div>
+        <div class="home-content">
+            <h1>Hi, It's <span>Pranjay</span></h1>
+            <h3 class="typing-text">I'm a <span></span></h3>
+            <p>Hi Its me Pranjay I am a content creator You can hire me for paid promotions, In-game stuff promotions. I am learning coding and some other languages. I am good at chess, editing videos, and making transition edits. You can contact me through my Instagram account by just messaging me there or from my Discord account. You can find my Instagram ID and Discord ID in the contact section which is in the top right. Feel free to DM me.</p>
+            
+            <div class="social-icons">
+                <a href="#" target="_blank"><i class="fa-brands fa-linkedin"></i></a>
+                <a href="#" target="_blank"><i class="fa-brands fa-github"></i></a>
+                <a href="#" target="_blank"><i class="fa-brands fa-x-twitter"></i></a>
+                <a href="https://www.instagram.com/exotic_pranjayx.v/" target="_blank"><i class="fa-brands fa-instagram"></i></a>
+            </div>
+
+            <!-- Instagram Button -->
+            <a href="#" class="btn" onclick="showInstagramID()">Instagram</a>
+            <!-- Discord Button -->
+            <a href="#" class="btn" onclick="showDiscordID()">Discord</a>
+
+            <p id="output"></p>
+        </div>
+    </section>
+
+    <!-- JavaScript for displaying Instagram and Discord IDs -->
+    <script>
+        function showInstagramID() {
+            document.getElementById('output').innerText = "Your Instagram ID is: @exoticpranjay";
+        }
+
+        function showDiscordID() {
+            document.getElementById('output').innerText = "Your Discord ID is: Pranjayx#4860";
+        }
+    </script>
+</body>
+
+</html>
